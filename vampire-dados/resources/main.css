@@ -1,0 +1,146 @@
+#svg *, .svg * {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#waitform {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    cursor: wait;
+}
+
+a {
+    color: gray;
+}
+
+em {
+    border: 1px rgba(0, 0, 0, 0.2) solid;
+    font-style: normal;
+    padding: 0px 3px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 3px;
+}
+
+body {
+    font-family: Georgia;
+}
+
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+    margin: 0px;
+}
+
+p {
+    font-size: 80%;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.control_panel {
+    background: #efefef;
+    padding: 15px;
+    padding-bottom: 0px;
+    position: absolute;
+    z-index: 10;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  height: 10px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider-regular {
+  width: 420px;
+}
+
+.slider-blood {
+  width: 150px;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-regular::-webkit-slider-thumb {
+  background: #000000;
+}
+
+.slider-blood::-webkit-slider-thumb {
+  background: #ad0000;
+}
+
+#throw {
+  margin-top: 12px;
+  padding: 10px;
+  background: #d3d3d3;
+  color: black;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 150px;
+  font-weight: 500;
+}
+
+#throw::focus {
+  outline: 0;
+}
+
+#throw::hover {
+  color: #ad0000;
+  border: 1px solid #ad0000;
+  transition-duration: 0.1s;
+}
+
+#throw::active {
+  color: white;
+  border: 1px solid white;
+  background: #ad0000;
+}
+
+#blood-info {
+    color: #381111;
+}
+
+.control-block {
+    float: left;
+    margin-right: 15px;
+}
+
+.critical {
+    font-weight: 600;
+}
+
+.messy-critical {
+    color: #ad0000;
+}
+
+.failure {
+    font-style: italic;
+}
+
+.bestial-failure {
+    color: #ad0000;
+    font-weight: 700;
+    font-style: normal;
+}
